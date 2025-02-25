@@ -10,9 +10,9 @@ function PreviewPage() {
         <span> </span>
       </div>
       <div className="w-fit h-fit  border-[4px] border-primary rounded-md">
-        {!!images.length && (
+        {images.length > 0 && (
           <img
-            src={images.at(-1)?.url ?? ""}
+            src={images[images.length-1]?.url ?? ""}
             alt="Image preview"
             className="rounded-md w-[300px] h-[300px]"
           />
